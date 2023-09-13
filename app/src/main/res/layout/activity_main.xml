@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <EditText
+        android:id="@+id/inputEditText"
+        android:layout_width="184dp"
+        android:layout_height="87dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="87dp"
+        android:autofillHints=""
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText,TextSizeCheck,DuplicateSpeakableTextCheck" />
+
+    <Spinner
+        android:id="@+id/inputSpinner"
+        android:layout_width="207dp"
+        android:layout_height="82dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="0dp"
+        android:entries="@array/temperature_units"
+        android:textAlignment="center"
+        android:theme="@style/MySpinnerStyle"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/outputEditText"
+        android:layout_width="186dp"
+        android:layout_height="85dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:hint="@string/output"
+        android:textColorHint="@color/grey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/border"
+        tools:ignore="TextSizeCheck" />
+
+    <Spinner
+        android:id="@+id/outputSpinner"
+        android:layout_width="205dp"
+        android:layout_height="87dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="0dp"
+        android:entries="@array/temperature_units"
+        android:textAlignment="center"
+        android:theme="@style/MySpinnerStyle" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/red"
+        android:paddingTop="10dp"
+        android:text="@string/temperature_conversion"
+        android:textColor="#311B92"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
